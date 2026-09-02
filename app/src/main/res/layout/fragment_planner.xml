@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Planner">
+
+    <TextView
+        android:id="@+id/textViewTitlu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Planner"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_margin="16dp"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_marginTop="56dp">
+
+    <EditText
+        android:id="@+id/etSarcina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="20dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        android:hint="Creaza o sarcina"
+        android:background="@android:color/transparent"/>
+
+    <EditText
+        android:id="@+id/etDataSarcina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="none"
+        android:textSize="15dp"
+        android:hint="Selecteaza data"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="true"
+        android:background="@android:color/transparent"/>
+
+
+</LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButtonSalvareSarcina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_gravity="right"
+        android:contentDescription="Salveaza sarcina"
+        android:src="@drawable/checkicon"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@android:color/transparent"
+        app:elevation="0dp"/>
+
+</FrameLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ModificareNote">
+
+    <TextView
+        android:id="@+id/textViewTitlu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Note"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_margin="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="56dp">
+            <EditText
+                android:id="@+id/etTitlu1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="20dp"
+                android:height="50dp"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="25dp"
+                android:text=""
+                android:hint="Titlul"
+                android:background="@android:color/transparent"/>
+
+            <EditText
+                android:id="@+id/etData1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:height="50dp"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="10dp"
+                android:text=""
+                android:hint="Data"
+                android:background="@android:color/transparent"/>
+
+            <EditText
+                android:id="@+id/etContinut1"
+                android:layout_width="match_parent"
+                android:layout_height="424dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="15dp"
+                android:height="50dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:gravity="top|start"
+                android:hint="Incepe sa tastezi"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:maxLines="100"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButtonSalvare1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:layout_gravity="right"
+        android:clickable="true"
+        android:contentDescription="Salveaza nota"
+        android:src="@drawable/checkicon"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@android:color/transparent"
+        app:elevation="0dp"/>
+
+</FrameLayout>
