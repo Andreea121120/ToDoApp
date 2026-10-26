@@ -24,4 +24,5 @@ ToDo Planner is an Android application for managing daily tasks and notes. Users
   <img src="screenshots/Add%20Note%20.jpeg" width="220" alt="Add Note">
   <img src="screenshots/Notes%20List.jpeg" width="220" alt="Notes List">
   <img src="screenshots/Show%20Note.jpeg" width="220" alt="Show Note">
+  <img src="screenshots/Edit%20Date20Task_Planner.jpeg" width="220" alt="Edit Task">
 </p>
